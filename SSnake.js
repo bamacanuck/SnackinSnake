@@ -7,5 +7,10 @@ let HEIGHT = 500;
 ctx.font = "20px Helvetica";
 
 let snakeObj = {
+    width: 20,
+    height: 20
+};
+
+let foodObj = {
     
-}
+};
