@@ -7,10 +7,13 @@ let HEIGHT = 500;
 ctx.font = "20px Helvetica";
 
 let snakeObj = {
+    // snakeObj to be repeated as segments of
+    //multi-part snake graphic
     width: 20,
     height: 20
 };
 
 let foodObj = {
-    
+    width: 20,
+    height: 20
 };
