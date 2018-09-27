@@ -26,6 +26,7 @@ let foodObj = {
 
 const drawSnake = function (snObj, i) {
     ctx.save ();
+    ctx.fillStyle = snakeObj.color;
     
     ctx.restore ();
 }
