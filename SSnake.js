@@ -24,8 +24,10 @@ let foodObj = {
     color: "yellow"
 };
 
-const drawSnake = function () {
+const drawSnake = function (snObj, i) {
+    ctx.save ();
     
+    ctx.restore ();
 }
 
 const startGame = function () {
