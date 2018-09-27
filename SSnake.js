@@ -38,5 +38,5 @@ const startGame = function () {
         {x:200, y:200}
     ];
 
-    foodItems [];
+    foodItems = [];
 }
