@@ -23,5 +23,9 @@ let foodObj = {
 };
 
 const startGame = function () {
-    
+    snakeItems = [
+        {x:220, y:200},
+        {x:210, y:200},
+        {x:200, y:200}
+    ];
 }
