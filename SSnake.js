@@ -24,6 +24,10 @@ let foodObj = {
     color: "yellow"
 };
 
+const drawSnake = function () {
+    
+}
+
 const startGame = function () {
     snakeItems = [
         {x:220, y:200},
