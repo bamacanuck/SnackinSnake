@@ -4,6 +4,10 @@ let ctx = document.getElementById("ctx").getContext("2d");
 
 let WIDTH = 500;
 let HEIGHT = 500;
+
+let snakeItems;
+let foodItems;
+
 ctx.font = "20px Helvetica";
 
 let snakeObj = {
@@ -17,3 +21,7 @@ let foodObj = {
     width: 20,
     height: 20
 };
+
+const startGame = function () {
+    
+}
