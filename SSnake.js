@@ -14,12 +14,14 @@ let snakeObj = {
     // snakeObj to be repeated as segments of
     //multi-part snake graphic
     width: 20,
-    height: 20
+    height: 20,
+    color: "green"
 };
 
 let foodObj = {
     width: 20,
-    height: 20
+    height: 20,
+    color: "yellow"
 };
 
 const startGame = function () {
