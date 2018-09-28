@@ -31,6 +31,10 @@ const drawSnake = function (snObj, i) {
     ctx.restore ();
 }
 
+const drawFood = function (fObj, i) {
+    
+}
+
 const startGame = function () {
     snakeItems = [
         {x:220, y:200},
