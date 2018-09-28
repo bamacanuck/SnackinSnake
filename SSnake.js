@@ -48,4 +48,7 @@ const startGame = function () {
     foodItems = [];
 
     snakeItems.forEach(drawSnake);
+
 }
+
+startGame ();
