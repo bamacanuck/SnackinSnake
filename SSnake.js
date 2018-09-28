@@ -32,7 +32,10 @@ const drawSnake = function (snObj, i) {
 }
 
 const drawFood = function (fObj, i) {
-    
+    ctx.save ();
+    ctx.fillStyle = foodObj.color;
+    ctx.fillRect(fObj.x, fObj.y, foodObj.width, foodObj.height);
+    ctx.restore ();
 }
 
 const startGame = function () {
