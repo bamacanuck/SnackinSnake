@@ -52,7 +52,7 @@ const startGame = function () {
     ];
 
     foodItems = [];
-
+    direction = 99;
     snakeItems.forEach(drawSnake);
 
 }
