@@ -19,6 +19,10 @@ let snakeObj = {
     color: "green"
 };
 
+document.onkeydown = function () {
+    
+}
+
 let foodObj = {
     width: 20,
     height: 20,
