@@ -7,6 +7,7 @@ let HEIGHT = 500;
 
 let snakeItems;
 let foodItems;
+let direction;
 
 ctx.font = "20px Helvetica";
 
