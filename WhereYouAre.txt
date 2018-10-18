@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-javascript-game-development-step-by-step
-
-lecture fifteen
-=======
-lecture seventeen
+lecture eighteen
 
 perhaps review section two
->>>>>>> 524e3d9e95ecdf5204de6b086a3c15ff1d22d16b
