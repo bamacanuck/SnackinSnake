@@ -20,10 +20,8 @@ let snakeObj = {
 };
 
 document.onkeydown = function (event) {
-    // 0 - left
-    // 1 - up
-    // 2 - right
-    // 3 - down
+    // 0 - left, 1 - up,
+    // 2 - right, 3 - down
     if (event.keyCode == 37) {
         direction = 0;
         console.log("movin' left");
