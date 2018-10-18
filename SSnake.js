@@ -28,6 +28,10 @@ document.onkeydown = function (event) {
         direction = 0;
         console.log("movin' left");
     }
+    else if (event.keyCode == 37) {
+        direction = 1;
+        console.log("movin' up");
+    }
 }
 
 let foodObj = {
