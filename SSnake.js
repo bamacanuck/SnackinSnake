@@ -19,8 +19,8 @@ let snakeObj = {
     color: "green"
 };
 
-document.onkeydown = function () {
-    
+document.onkeydown = function (event) {
+
 }
 
 let foodObj = {
