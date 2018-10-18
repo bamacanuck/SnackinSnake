@@ -28,15 +28,15 @@ document.onkeydown = function (event) {
         direction = 0;
         console.log("movin' left");
     }
-    else if (event.keyCode == 37) {
+    else if (event.keyCode == 38) {
         direction = 1;
         console.log("movin' up");
     }
-    else if (event.keyCode == 37) {
+    else if (event.keyCode == 39) {
         direction = 2;
         console.log("movin' right");
     }
-    else if (event.keyCode == 37) {
+    else if (event.keyCode == 40) {
         direction = 3;
         console.log("movin' down");
     }
