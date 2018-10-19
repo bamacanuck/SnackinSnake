@@ -117,6 +117,8 @@ const updateSnakeItems = function () {
     }
 }
 
+const updateSnake = function () {}
+
 const startGame = function () {
     // snakeList
     snakeItems = [
