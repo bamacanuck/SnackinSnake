@@ -69,7 +69,9 @@ const drawFood = function (fObj, i) {
 }
 
 const updateSnakeItems = function () {
-
+    for (let i = snakeItems.length - 1; i >= 0; i--) {
+        
+    }
 }
 
 const startGame = function () {
