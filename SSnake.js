@@ -40,10 +40,10 @@ document.onkeydown = function (event) {
         direction = 3;
         console.log("movin' down");
     }
-    // else if (event.keyCode == 32) {
-    //     direction = pause (?);
-    //     console.log("movin' down");
-    // }
+    else if (event.keyCode == 32) {
+        direction = 4;
+        console.log("pause");
+    }
 }
 
 // let food
@@ -112,6 +112,16 @@ const updateSnakeItems = function () {
             if (i == 0) {
                 // snakeItems[i].x = snakeItems[i-1].x;
                 snakeItems[i].y = snakeItems[i].y + 5;
+            }
+            else {
+                snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i-1].y;
+            }
+        }
+        if (direction == 4) {
+            if (i == 0) {
+                snakeItems[i].x = snakeItems[i].x;
+                snakeItems[i].y = snakeItems[i].y;
             }
             else {
                 snakeItems[i].x = snakeItems[i-1].x;
