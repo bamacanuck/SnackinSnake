@@ -68,6 +68,10 @@ const drawFood = function (fObj, i) {
     ctx.restore ();
 }
 
+const updateSnakeList = function () {
+    
+}
+
 const startGame = function () {
     // snakeList
     snakeItems = [
