@@ -148,7 +148,7 @@ const startGame = function () {
     foodItems = [];
     direction = 99;
     // snakeItems.forEach(drawSnake);
-    setInterval(updateSnake, 100);
+    setInterval(updateSnake, 50);
 }
 
 startGame ();
