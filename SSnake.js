@@ -70,6 +70,7 @@ const drawFood = function (fObj, i) {
 
 const updateSnakeItems = function () {
     for (let i = snakeItems.length - 1; i >= 0; i--) {
+        // if moving left
         if (direction == 0) {
             if (i == 0) {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -80,6 +81,7 @@ const updateSnakeItems = function () {
                 snakeItems[i].y = snakeItems[i-1].y;
             }
         }
+        // if moving up
         if (direction == 1) {
             if (i == 0) {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -90,6 +92,7 @@ const updateSnakeItems = function () {
                 snakeItems[i].y = snakeItems[i-1].y;
             }
         }
+        // if moving right
         if (direction == 2) {
             if (i == 0) {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -100,6 +103,7 @@ const updateSnakeItems = function () {
                 snakeItems[i].y = snakeItems[i-1].y;
             }
         }
+        // if moving down
         if (direction == 3) {
             if (i == 0) {
                 snakeItems[i].x = snakeItems[i-1].x;
