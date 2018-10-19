@@ -40,6 +40,10 @@ document.onkeydown = function (event) {
         direction = 3;
         console.log("movin' down");
     }
+    // else if (event.keyCode == 32) {
+    //     direction = pause (?);
+    //     console.log("movin' down");
+    // }
 }
 
 // let food
@@ -85,7 +89,7 @@ const updateSnakeItems = function () {
         if (direction == 1) {
             if (i == 0) {
                 // snakeItems[i].x = snakeItems[i-1].x;
-                snakeItems[i].y = snakeItems[i].y + 5;
+                snakeItems[i].y = snakeItems[i].y - 5;
             }
             else {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -107,7 +111,7 @@ const updateSnakeItems = function () {
         if (direction == 3) {
             if (i == 0) {
                 // snakeItems[i].x = snakeItems[i-1].x;
-                snakeItems[i].y = snakeItems[i].y - 5;
+                snakeItems[i].y = snakeItems[i].y + 5;
             }
             else {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -117,7 +121,11 @@ const updateSnakeItems = function () {
     }
 }
 
-const updateSnake = function () {}
+const updateSnake = function () {
+    ctx.clearRect(0,0, WIDTH, HEIGHT);
+    snakeItems.forEach(drawSnake);
+    updateSnakeItems();
+}
 
 const startGame = function () {
     // snakeList
@@ -129,8 +137,8 @@ const startGame = function () {
     // foodList
     foodItems = [];
     direction = 99;
-    snakeItems.forEach(drawSnake);
-
+    // snakeItems.forEach(drawSnake);
+    setInterval(updateSnake, 100);
 }
 
 startGame ();
