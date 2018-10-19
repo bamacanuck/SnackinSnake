@@ -73,8 +73,8 @@ const updateSnakeItems = function () {
         // if moving left
         if (direction == 0) {
             if (i == 0) {
-                snakeItems[i].x = snakeItems[i-1].x;
-                snakeItems[i].y = snakeItems[i-1].y;
+                snakeItems[i].x = snakeItems[i].x - 5;
+                // snakeItems[i].y = snakeItems[i-1].y;
             }
             else {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -84,8 +84,8 @@ const updateSnakeItems = function () {
         // if moving up
         if (direction == 1) {
             if (i == 0) {
-                snakeItems[i].x = snakeItems[i-1].x;
-                snakeItems[i].y = snakeItems[i-1].y;
+                // snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i].y + 5;
             }
             else {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -95,8 +95,8 @@ const updateSnakeItems = function () {
         // if moving right
         if (direction == 2) {
             if (i == 0) {
-                snakeItems[i].x = snakeItems[i-1].x;
-                snakeItems[i].y = snakeItems[i-1].y;
+                snakeItems[i].x = snakeItems[i].x + 5;
+                // snakeItems[i].y = snakeItems[i-1].y;
             }
             else {
                 snakeItems[i].x = snakeItems[i-1].x;
@@ -106,8 +106,8 @@ const updateSnakeItems = function () {
         // if moving down
         if (direction == 3) {
             if (i == 0) {
-                snakeItems[i].x = snakeItems[i-1].x;
-                snakeItems[i].y = snakeItems[i-1].y;
+                // snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i].y - 5;
             }
             else {
                 snakeItems[i].x = snakeItems[i-1].x;
