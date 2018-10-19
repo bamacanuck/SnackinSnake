@@ -70,7 +70,10 @@ const drawFood = function (fObj, i) {
 
 const updateSnakeItems = function () {
     for (let i = snakeItems.length - 1; i >= 0; i--) {
-        if (direction == 0) {}
+        if (direction == 0) {
+            snakeItems[i].x = snakeItems[i-1].x;
+            snakeItems[i].y = snakeItems[i-1].y;
+        }
         if (direction == 1) {}
         if (direction == 2) {}
         if (direction == 3) {}
