@@ -80,9 +80,36 @@ const updateSnakeItems = function () {
                 snakeItems[i].y = snakeItems[i-1].y;
             }
         }
-        if (direction == 1) {}
-        if (direction == 2) {}
-        if (direction == 3) {}
+        if (direction == 1) {
+            if (i == 0) {
+                snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i-1].y;
+            }
+            else {
+                snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i-1].y;
+            }
+        }
+        if (direction == 2) {
+            if (i == 0) {
+                snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i-1].y;
+            }
+            else {
+                snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i-1].y;
+            }
+        }
+        if (direction == 3) {
+            if (i == 0) {
+                snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i-1].y;
+            }
+            else {
+                snakeItems[i].x = snakeItems[i-1].x;
+                snakeItems[i].y = snakeItems[i-1].y;
+            }
+        }
     }
 }
 
